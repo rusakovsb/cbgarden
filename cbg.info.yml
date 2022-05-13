@@ -1,0 +1,26 @@
+name: CBG
+type: theme
+description: 'Theme for Central Botanical Garden'
+core_version_requirement: ^8 || ^9
+base theme: false
+
+libraries:
+  - cbg/global-styling
+
+regions:
+  header_first_left: 'Header First Left' 
+  header_first_right: 'Header First Right' 
+  header_second_left: 'Header Second Left' 
+  header_second_right: 'Header Second Right' 
+  sidebar: 'Sidebar'
+  slider_content: 'Slider'
+  featured_top: 'Featured Top'
+  title: 'Title'  
+  content: 'Content'
+  content_bottom: 'Content Bottom'
+  featured_bottom: 'Featured Bottom'
+  footer_left: 'Footer Left' 
+  footer_right: 'Footer Right'
+  popup: 'Popup'
+  mobile_nav: 'Mobile Navigation'
+

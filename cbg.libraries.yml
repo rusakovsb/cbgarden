@@ -1,0 +1,22 @@
+global-styling:
+  css:
+    theme:
+      css/swiper.min.css: {}
+      css/main.css: {}
+      css/grid.css: {}
+      css/colorbox.css: {}
+      css/responsive.css: {}
+  js:   
+    js/imagesloaded.pkgd.min.js: {}
+    js/masonry.pkgd.min.js: {}
+    js/swiper.min.js: {}
+    js/colorbox.js: {}
+    js/gsap.min.js: {}
+    js/map.js: {}
+    js/main.js: {}
+    js/smoothscroll.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - colorbox/colorbox
+  
