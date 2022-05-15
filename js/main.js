@@ -63,7 +63,7 @@
 
     // Mobile nav
 
-    $(".region-header-first-right").prepend('<button class="nav-toggle"><span class="nav-toggle__line nav-toggle__line--first"></span><span class="nav-toggle__line nav-toggle__line--second></span><span class="nav-toggle__line nav-toggle__line--third></span></button>');
+    $(".region-header-first-right").prepend('<button class="nav-toggle"><span class="nav-toggle__line nav-toggle__line--first"></span><span class="nav-toggle__line nav-toggle__line--second"></span><span class="nav-toggle__line nav-toggle__line--third"></span></button>');
     
     $(".nav-toggle").click(function() {               
         if(!$(this).hasClass("nav-toggle--active")) {  
