@@ -63,23 +63,23 @@
 
     // Mobile nav
 
-    $(".region-header-first-right").prepend('<button class="mobile-nav-toggle"><span></span><span></span><span></span></button>');
+    $(".region-header-first-right").prepend('<button class="nav-toggle"><span class="nav-toggle__line nav-toggle__line--first"></span><span class="nav-toggle__line nav-toggle__line--second></span><span class="nav-toggle__line nav-toggle__line--third></span></button>');
     
-    $(".mobile-nav-toggle").click(function() {               
-        if(!$(this).hasClass("mobile-nav-toggle--active")) {  
-            $(this).addClass("mobile-nav-toggle--active");          
+    $(".nav-toggle").click(function() {               
+        if(!$(this).hasClass("nav-toggle--active")) {  
+            $(this).addClass("nav-toggle--active");          
             $(".page-overlay").fadeIn();
             gsap.to(".mobile-nav", {
-                ease: "power2.out",  
+                ease: "power3.out",  
                 duration: 0.75,      
                 x: "0%"          
             })    
         }
         else {      
-            $(this).removeClass("mobile-nav-toggle--active");      
+            $(this).removeClass("nav-toggle--active");      
             $(".page-overlay").fadeOut()
             gsap.to(".mobile-nav", {
-                ease: "power2.out",  
+                ease: "power3.out",  
                 duration: 0.5,      
                 x: "100%"
             })    
@@ -88,9 +88,9 @@
 
     $(".page-overlay").click(function() {  
         $(this).fadeOut()   
-        $(".mobile-nav-toggle").removeClass("mobile-nav-toggle--active")         
+        $(".nav-toggle").removeClass("nav-toggle--active")         
         gsap.to(".mobile-nav", {
-            ease: "power2.out",  
+            ease: "power3.out",  
             duration: 0.5,      
             x: "100%"
         })  
