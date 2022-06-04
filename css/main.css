@@ -436,12 +436,9 @@ button {
 }
 
 .slider-nav {
-	right: 5vw;	
-	bottom: 0;
-}
-
-.slider-nav {
 	position: absolute;
+	right: 5vw;
+	bottom: 0;
 	z-index: 1;
 	height: 5vw;
 	display: flex;
@@ -454,14 +451,6 @@ button {
 	padding: 0;
 	background: transparent;
 	border: none;
-}
-
-.slider-nav__prev {
-	justify-content: flex-start;
-}
-
-.slider-nav__next {
-	justify-content: flex-end;
 }
 
 .slider-nav__prev path,
@@ -779,9 +768,37 @@ button {
 /* Recent photos
 /*-------------------------------------------*/
 
-.recent-photos {
+.recent-photos  {
 	position: relative;
+}
+
+.recent-photos-nav  {
+	display: flex;
+	align-items: center;
 	padding: 0 0 2.5vw 0;
+}
+
+.recent-photos-nav__prev,
+.recent-photos-nav__next {
+	width: 1.563vw;
+	padding: 0;
+	background: transparent;
+	border: none;
+}
+
+.recent-photos-nav__prev path,
+.recent-photos-nav__next path {
+	fill: var(--accent);
+	transition: 0.2s linear;
+}
+
+.recent-photos-nav__prev:hover path,
+.recent-photos-nav__next:hover path {
+	fill: var(--accent-hover);
+}
+
+.recent-photos-nav__prev {
+	margin: 0 1vw 0 0;
 }
 
 /*-------------------------------------------*/
