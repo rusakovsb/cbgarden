@@ -770,12 +770,12 @@ button {
 
 .recent-photos  {
 	position: relative;
+	padding: 2.5vw 0 0 0;
 }
 
 .recent-photos-nav  {
 	display: flex;
 	align-items: center;
-	padding: 0 0 2.5vw 0;
 }
 
 .recent-photos-nav__prev,
