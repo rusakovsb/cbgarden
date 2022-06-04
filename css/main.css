@@ -768,6 +768,10 @@ button {
 /* Recent photos
 /*-------------------------------------------*/
 
+.recent-photos  {
+	position: relative;
+}
+
 .recent-photos-nav  {
 	display: flex;
 	align-items: center;
