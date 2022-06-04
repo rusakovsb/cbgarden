@@ -775,6 +775,7 @@ button {
 .recent-photos-nav  {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .recent-photos-nav__prev,
