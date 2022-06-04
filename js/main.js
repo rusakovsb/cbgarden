@@ -23,6 +23,35 @@
         },
     })
 
+    // Recent photos
+
+    const recentPhotos = new Swiper ('.view-recent-photos__content', {
+        loop: true,
+        speed: 500,
+        navigation: {
+            nextEl: '#recent-photos-next',
+            prevEl: '#recent-photos-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 16,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 16,
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 16,
+            },
+            1200: {
+                slidesPerView: 5,
+                spaceBetween: 32,
+            },
+        }
+    })
+
     // Excursions
 
     $(".excursion__image").each(function() {
