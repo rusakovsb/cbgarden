@@ -1,0 +1,72 @@
+{#
+/**
+ * @file
+ * Theme override for a main view template.
+ *
+ * Available variables:
+ * - attributes: Remaining HTML attributes for the element.
+ * - css_name: A css-safe version of the view name.
+ * - css_class: The user-specified classes names, if any.
+ * - header: The optional header.
+ * - footer: The optional footer.
+ * - rows: The results of the view query, if any.
+ * - empty: The content to display if there are no rows.
+ * - pager: The optional pager next/prev links to display.
+ * - exposed: Exposed widget form/info to display.
+ * - feed_icons: Optional feed icons to display.
+ * - more: An optional link to the next page of results.
+ * - title: Title of the view, only used when displaying in the admin preview.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the view title.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the view title.
+ * - attachment_before: An optional attachment view to be displayed before the
+ *   view content.
+ * - attachment_after: An optional attachment view to be displayed after the
+ *   view content.
+ * - dom_id: Unique id for every view being printed to give unique class for
+ *   Javascript.
+ *
+ * @see template_preprocess_views_view()
+ */
+#}
+{%
+  set classes = [
+    'view',
+    'view-' ~ id|clean_class,
+    'view-display-id-' ~ display_id, 
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {% if header %}
+    <div class="{{ 'view-' ~ id|clean_class }}__header">
+      {{ header }}
+    </div>
+  {% endif %}
+  {% if rows %}
+    <div class="{{ 'view-' ~ id|clean_class }}__content swiper">
+      {{ rows }}
+    </div>
+  {% endif %}
+  <div class="recent-photos-nav">
+    <button id="recent-photos-prev" class="recent-photos-nav__prev">
+	    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20.2">
+        <path d="M28.8,8.9H4.2L11,2.1c0.5-0.5,0.5-1.2,0-1.7c-0.5-0.5-1.2-0.5-1.7,0L0.4,9.2C0.2,9.4,0,9.7,0,10.1l0,0l0,0
+	c0,0,0,0,0,0l0,0l0,0l0,0c0,0,0,0,0,0l0,0l0,0c0,0.3,0.2,0.7,0.4,0.9l8.8,8.8c0.5,0.5,1.2,0.5,1.7,0c0.5-0.5,0.5-1.2,0-1.7l-6.8-6.8
+	h24.6c0.7,0,1.2-0.5,1.2-1.2l0,0C30,9.4,29.5,8.9,28.8,8.9z"/>      
+      </svg>                 
+    </button>
+    <button id="recent-photos-next" class="recent-photos-nav__next">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20.2">
+        <path d="M1.2,8.9h24.6L19,2.1c-0.5-0.5-0.5-1.2,0-1.7c0.5-0.5,1.2-0.5,1.7,0l8.8,8.8c0.3,0.2,0.4,0.5,0.4,0.9l0,0l0,0
+	c0,0,0,0,0,0l0,0l0,0l0,0c0,0,0,0,0,0l0,0l0,0c0,0.3-0.2,0.7-0.4,0.9l-8.8,8.8c-0.5,0.5-1.2,0.5-1.7,0c-0.5-0.5-0.5-1.2,0-1.7
+	l6.8-6.8H1.2c-0.7,0-1.2-0.5-1.2-1.2l0,0C0,9.4,0.5,8.9,1.2,8.9z"/>
+      </svg>              
+   	</button>
+  </div>
+  {% if footer %}
+    <div class="{{ 'view-' ~ id|clean_class }}__footer">
+      {{ footer }}
+    </div>
+  {% endif %}
+</div>
