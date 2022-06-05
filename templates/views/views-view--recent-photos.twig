@@ -48,24 +48,21 @@
       {{ rows }}
     </div>
   {% endif %}
-  <div class="slider-nav">
-    <button id="slider-prev" class="slider-nav__prev">
+  <div class="recent-photos-nav">
+    <button id="recent-photos-prev" class="recent-photos-nav__prev">
 	    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20.2">
         <path d="M28.8,8.9H4.2L11,2.1c0.5-0.5,0.5-1.2,0-1.7c-0.5-0.5-1.2-0.5-1.7,0L0.4,9.2C0.2,9.4,0,9.7,0,10.1l0,0l0,0
 	c0,0,0,0,0,0l0,0l0,0l0,0c0,0,0,0,0,0l0,0l0,0c0,0.3,0.2,0.7,0.4,0.9l8.8,8.8c0.5,0.5,1.2,0.5,1.7,0c0.5-0.5,0.5-1.2,0-1.7l-6.8-6.8
 	h24.6c0.7,0,1.2-0.5,1.2-1.2l0,0C30,9.4,29.5,8.9,28.8,8.9z"/>      
       </svg>                 
     </button>
-    <button id="slider-next" class="slider-nav__next">
+    <button id="recent-photos-next" class="recent-photos-nav__next">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20.2">
         <path d="M1.2,8.9h24.6L19,2.1c-0.5-0.5-0.5-1.2,0-1.7c0.5-0.5,1.2-0.5,1.7,0l8.8,8.8c0.3,0.2,0.4,0.5,0.4,0.9l0,0l0,0
 	c0,0,0,0,0,0l0,0l0,0l0,0c0,0,0,0,0,0l0,0l0,0c0,0.3-0.2,0.7-0.4,0.9l-8.8,8.8c-0.5,0.5-1.2,0.5-1.7,0c-0.5-0.5-0.5-1.2,0-1.7
 	l6.8-6.8H1.2c-0.7,0-1.2-0.5-1.2-1.2l0,0C0,9.4,0.5,8.9,1.2,8.9z"/>
       </svg>              
    	</button>
-  </div>
-  <div class="slider-sidebar">
-    <div id="slider-pagination" class="slider-pagination"></div>    
   </div>
   {% if footer %}
     <div class="{{ 'view-' ~ id|clean_class }}__footer">
