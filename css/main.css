@@ -1513,7 +1513,7 @@ a.colorbox:hover:after {
 	display: inline-block;
 }
 
-.taxonomy-menu__submenu .taxonomy-menu__submenu .taxonomy-menu__link:before {
+.taxonomy-menu__submenu .taxonomy-menu__submenu .taxonomy-menu__link::before {
     display: inline-block;
     content: "";
     width: 0.75em;
