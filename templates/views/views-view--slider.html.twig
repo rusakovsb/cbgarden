@@ -39,19 +39,19 @@
 %}
 <div{{ attributes.addClass(classes) }}>
   {% if header %}
-    <div class="view-slider__header">
+    <div class="{{ 'view-' ~ id|clean_class }}__header">
       {{ header }}
     </div>
   {% endif %}
   {% if rows %}
-    <div class="view-slider__content swiper">
+    <div class="{{ 'view-' ~ id|clean_class }}__content swiper">
       {{ rows }}
     </div>
   {% endif %}
   <div class="slider-nav">
     <button id="slider-prev" class="slider-nav__prev">
 	    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20.2">
-        <path class="st0" d="M28.8,8.9H4.2L11,2.1c0.5-0.5,0.5-1.2,0-1.7c-0.5-0.5-1.2-0.5-1.7,0L0.4,9.2C0.2,9.4,0,9.7,0,10.1l0,0l0,0
+        <path d="M28.8,8.9H4.2L11,2.1c0.5-0.5,0.5-1.2,0-1.7c-0.5-0.5-1.2-0.5-1.7,0L0.4,9.2C0.2,9.4,0,9.7,0,10.1l0,0l0,0
 	c0,0,0,0,0,0l0,0l0,0l0,0c0,0,0,0,0,0l0,0l0,0c0,0.3,0.2,0.7,0.4,0.9l8.8,8.8c0.5,0.5,1.2,0.5,1.7,0c0.5-0.5,0.5-1.2,0-1.7l-6.8-6.8
 	h24.6c0.7,0,1.2-0.5,1.2-1.2l0,0C30,9.4,29.5,8.9,28.8,8.9z"/>      
       </svg>                 
@@ -68,7 +68,7 @@
     <div id="slider-pagination" class="slider-pagination"></div>    
   </div>
   {% if footer %}
-    <div class="view-slider__footer">
+    <div class="{{ 'view-' ~ id|clean_class }}__footer">
       {{ footer }}
     </div>
   {% endif %}
