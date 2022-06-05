@@ -57,7 +57,6 @@
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-Bold.eot');
@@ -1134,8 +1133,8 @@ button {
 	font-weight: bold;
 }
 
-.field-name--field-product-latin-name,
-.field-name--field-ecotrail-plant-latin-name {
+.field--name-field-product-latin-name,
+.field--name-field-ecotrail-plant-latin-name {
 	margin: 0 0 1em 0;
 	font-size: calc(1rem + 0.417vw);
 	color: var(--accent);
